@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import "./App.css";
 import InputField from "./Components/InputField";
 import { Todo } from "./Components/Model";
@@ -9,8 +9,6 @@ const App: React.FC = () => {
   const [todo, setTodo] = useState<string>("");
   const [todos, setTodos] = useState<Todo[]>([]);
   const [CompletedTodos, setCompletedTodos] = useState<Todo[]>([]);
-
- 
 
   const handleAdd = (e: React.FormEvent): void => {
     e.preventDefault();
